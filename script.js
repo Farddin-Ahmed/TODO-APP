@@ -38,7 +38,7 @@ input.addEventListener("keydown", (event) => {
 });
 function addtask() {
   if (input.value != "") {
-    let tasktext = input.value;
+    let tasktext = input.value.trimEnd();
 
     all.classList.add("focused");
     active.classList.remove("focused");
